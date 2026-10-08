@@ -1,0 +1,48 @@
+from decimal import Decimal
+import datetime
+
+
+def add(items, title, amount, expiration_date=None):
+    if title in items:
+        items[title].append({'amount': Decimal(amount) })
+    else:
+        items[title] = []
+        items[title].append({'amount': Decimal(amount)})
+
+    if expiration_date != None:
+        items[title][-1]['expiration_date'] = datetime.date(*[int(i) for i in expiration_date.split("-")])
+    else:
+        items[title][-1]['expiration_date'] = None
+
+
+
+
+def add_by_note(items, note):
+    a = note.split()
+    if a[-1].count("-") == 2:
+        add(items, " ".join(a[:-2]), a[-2], a[-1])
+    else:
+        add(items, " ".join(a[:-1]), a[-1])
+
+
+
+def find(items, needle):
+    a = []
+    for i in items:
+        if needle.lower() in i.lower():
+            a.append(i)
+    return a
+
+
+def amount(items, needle):
+    a = find(items, needle)
+    kol_pr = Decimal("0")
+    for i in a:
+        for j in items[i]:
+            kol_pr += j["amount"]
+    return kol_pr
+
+
+
+
+
