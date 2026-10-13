@@ -1,7 +1,6 @@
 from decimal import Decimal
 import datetime
 
-print("начало")
 def add(items, title, amount, expiration_date=None):
     if title in items:
         items[title].append({'amount': Decimal(amount) })
@@ -42,7 +41,5 @@ def amount(items, needle):
             kol_pr += j["amount"]
     return kol_pr
 
-
-print("Конец")
 
 
