@@ -43,6 +43,6 @@ def amount(items, needle):
     return kol_pr
 
 
-
+print("Конец")
 
 
