@@ -1,2 +1,4 @@
 print("Pasha")
-print("Крут"))
+print("Крут")
+a, b = 2, 7
+print(a + b)
