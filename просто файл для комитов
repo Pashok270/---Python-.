@@ -2,3 +2,5 @@ print("Pasha")
 print("Крут")
 a, b = 2, 7
 print(a + b)
+c = a * 2 + b ** 10
+print(c)
