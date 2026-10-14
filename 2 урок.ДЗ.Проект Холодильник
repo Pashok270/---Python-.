@@ -43,3 +43,4 @@ def amount(items, needle):
 
 
 
+print("Конец")
