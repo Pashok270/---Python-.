@@ -16,3 +16,11 @@ class Book:
         return f"книга - {self.title}, автор - {self.author}, год - {self.year}"
 print("Задание 2 ")
 
+class Ebook(Book):
+    def __init__(self, title, author, year, format):
+        self.title = title
+        self.author = author
+        self.year = year
+        self.format = format
+    def info(self):
+        return f"книга - {self.title}, автор - {self.author}, год - {self.year}. формат - {self.format}"
