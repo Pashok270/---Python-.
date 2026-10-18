@@ -24,3 +24,4 @@ class Ebook(Book):
         self.format = format
     def info(self):
         return f"книга - {self.title}, автор - {self.author}, год - {self.year}. формат - {self.format}"
+4 урок программирование.py
