@@ -111,3 +111,16 @@ print(num)
         self.format = format
     def info(self):
         return f"книга - {self.title}, автор - {self.author}, год - {self.year}. формат - {self.format}"
+
+
+
+import pandas as pd
+
+df = pd.read_csv("world-data-2023.csv")
+
+#Life expectancy
+col = "Life expectancy"
+df1 = df["Life expectancy"]
+ma, mi = df1.max(), df1.min()
+df = df[(df["Life expectancy"] == ma) | (df["Life expectancy"] == mi)]
+df.to_csv("extreme_life_expectancy.csv", index=False)
