@@ -68,32 +68,6 @@ if 10 <= a <= 50:
 else:
     print("нет")
 
-print("3 задание")
-import random
-import string
-
-letters = random.choices(string.ascii_uppercase, k=3)
-digits = random.choices(string.digits, k=3)
-specials = random.choices("!@#$%^&*", k=2)
-
-password_list = letters + digits + specials
-random.shuffle(password_list)
-print("".join(password_list))
-
-print("4 задание")
-a = input().lower()
-kol_sim = {}
-for i in a:
-    if i in kol_sim:
-        kol_sim[i] += 1
-    else:
-        kol_sim[i] = 1
-kol1 = []
-for i in kol_sim:
-    kol1.append((kol_sim[i], i))
-kol1 = sorted(kol1)
-print(kol1[-1][1], kol1[-2][1], kol1[-3][1])
-
 print("5 задание")
 n = int(input())
 num = [i for i in range(2, n + 1)]
