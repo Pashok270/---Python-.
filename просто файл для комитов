@@ -86,12 +86,31 @@ print(num)
     def info(self):
         return f"книга - {self.title}, автор - {self.author}, год - {self.year}. формат - {self.format}"
 
+print("1 задание")
 
+
+class Book:
+    def __init__(self, title, author, year):
+        self.title = title
+        self.author = author
+        self.year = year
+    def info(self):
+        return f"книга - {self.title}, автор - {self.author}, год - {self.year}"
+print("Задание 2 ")
+
+class Ebook(Book):
+    def __init__(self, title, author, year, format):
+        self.title = title
+        self.author = author
+        self.year = year
+        self.format = format
+    def info(self):
+        return f"книга - {self.title}, автор - {self.author}, год - {self.year}. формат - {self.format}"
 
 import pandas as pd
 
 df = pd.read_csv("world-data-2023.csv")
-
+#sdasdad
 #Life expectancy
 col = "Life expectancy"
 df1 = df["Life expectancy"]
