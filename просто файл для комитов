@@ -117,3 +117,9 @@ df1 = df["Life expectancy"]
 ma, mi = df1.max(), df1.min()
 df = df[(df["Life expectancy"] == ma) | (df["Life expectancy"] == mi)]
 df.to_csv("extreme_life_expectancy.csv", index=False)
+
+class Employee:
+    pass
+
+manager = Employee()
+developer = Employee()
