@@ -116,7 +116,20 @@ df = df[(df["Life expectancy"] == ma) | (df["Life expectancy"] == mi)]
 df.to_csv("extreme_life_expectancy.csv", index=False)
 
 class Employee:
+    passclass Employee:
+    vacation_days = 28
+    def __init__(self, first_name, second_name, gender):
+        self.first_name = first_name
+        self.second_name = second_name
+        self.gender = gender
     pass
+
+# Создайте экземпляры класса Employee с различными значениями атрибутов.
+employee1 = Employee(...)
+employee2 = Employee(...)
+
+# Допишите код для вывода информации о сотрудниках.
+print(...)
 
 manager = Employee()
 developer = Employee()
