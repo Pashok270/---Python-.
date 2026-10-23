@@ -1,19 +1,4 @@
 
-manager = Employee()
-developer = Employee()
-
-class Ebook(Book):
-    def __init__(self, title, author, year, format):
-        self.title = title
-        self.author = author
-        self.year = year
-        self.format = format
-    def info(self):
-        return f"книга - {self.title}, автор - {self.author}, год - {self.year}. формат - {self.format}"
-4 урок программирование.py
-print("1 задание")
-
-
 class Book:
     def __init__(self, title, author, year):
         self.title = title
