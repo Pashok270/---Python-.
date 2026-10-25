@@ -27,19 +27,7 @@ collector_2 = MushroomsCollector()
 collector_2.add_mushroom('Лисичка')
 print(collector_1)
 print(collector_2)
-print("1 задание")
-tmp_cel = 15
-tmp_fer = (tmp_cel * 9 / 5) + 32
-tmp_kel = (tmp_cel + 273.15)
-print(tmp_fer)
-print(tmp_kel)
-
-print("2 задание")
-a = int(input())
-if a % 2 == 0:
-    print("чётное")
-else:
-    print("не чётное")
+нлгангчётное")
 if a > 0:
     print("положительное")
 elif a == 0:
