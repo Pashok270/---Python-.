@@ -1,13 +1,3 @@
-.
-
-
-
-# Пример запуска для самопроверки
-collector_1 = MushroomsCollector()
-collector_1.add_mushroom('Мухомор')
-collector_1.add_mushroom('Подосиновик')
-collector_1.add_mushroom('Белый')
-print(collector_1)
 
 collector_2 = MushroomsCollector()
 collector_2.add_mushroom('Лисичка')
