@@ -2,21 +2,8 @@
 collector_2 = MushroomsCollector()
 collector_2.add_mushroom('Лисичка')
 print(collector_1)
-print(collector_2)
-нлгангчётное")
-if a > 0:
-    print("положительное")
-elif a == 0:
-    print(0)
-else:
-    print("отрицательное")
-if 10 <= a <= 50:
-    print("да")
-els
-            ...
-        else:
-            ...
-
+print(
+ец46е
     # Допишите метод, удаляющий бактерию из чаши.
     # Если в чаше уже нет бактерий, то удалять нечего;
     # выведите сообщение об ошибке
