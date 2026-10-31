@@ -9,16 +9,7 @@ print(
 # Пример запуска для самопроверки
 bacteria_producer = BacteriaProducer(max_bacteria=3)
 bacteria_producer.delete()
-bacteria_producer.create()
-bacteria_producer.create()
-bacteria_producer.create()
-bacteria_producer.create()
-bacteria_producer.delete()
-
-# Создайте экземпляры класса Employee с различными значениями атрибутов.
-employee1 = Employee(...)
-employee2 = Employee(...)
-
+bacteASFFASFASF
 # Допишите код для вывода информации о сотрудниках.
 print(...)
 
