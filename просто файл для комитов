@@ -7,11 +7,4 @@ print(
 
 
 # Пример запуска для самопроверки
-bacteria_producer = BacteriaProducer(max_bacteria=3)
-bacteria_producer.delete()
-bacteASFFASFASF
-# Допишите код для вывода информации о сотрудниках.
-print(...)
-
-manager = Employee()
-developer = Employee()
+фывааыф
